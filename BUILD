@@ -1,11 +1,21 @@
-cc_binary(
-    name = "main",
-    srcs = ["src/main.cpp"],
+cc_library(
+    name = "euler",
+    srcs = glob(
+        include = [
+            "src/euler/*.cc",
+            "src/euler/*.h"
+        ]
+    ),
 )
 
 cc_test(
-  name = "hello_test",
+  name = "euler_tests",
   size = "small",
-  srcs = ["tests/hello_test.cpp"],
-  deps = ["@com_google_googletest//:gtest_main"],
+  srcs = glob(
+      include = ["tests/euler/*_test.cc"]
+  ),
+  deps = [
+      "@com_google_googletest//:gtest_main",
+      "euler"
+  ],
 )
