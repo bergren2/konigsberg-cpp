@@ -22,7 +22,7 @@ choco install bazelisk
 
 ```shell
 bazel sync
-bazel test //tests:all
+bazel test //:all
 ```
 
 ## Resources
