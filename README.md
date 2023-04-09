@@ -12,12 +12,17 @@ C++14
 brew bundle
 ```
 
+### Windows
+
+```shell
+choco install bazelisk
+```
+
 ## Development
 
 ```shell
 bazel sync
-bazel build //src:main
-bazel test
+bazel test //tests:all
 ```
 
 ## Resources
