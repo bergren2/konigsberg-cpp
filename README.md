@@ -18,6 +18,16 @@ brew bundle
 choco install bazelisk
 ```
 
+Also download [Visual C++ build tools](https://visualstudio.microsoft.com/vs/features/cplusplus/).
+
+### OS-Agnostic Bazelisk
+
+Or if you use [Scoop](https://scoop.sh/) and don't want to also install Chocolatey.
+
+```shell
+npm install -g @bazel/bazelisk
+```
+
 ## Development
 
 ```shell
